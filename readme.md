@@ -8,15 +8,6 @@ Este repositorio contiene una colección de ejercicios y proyectos relacionados 
 - Pequeños proyectos que permiten aplicar los conceptos aprendidos en situaciones prácticas.
 - Problemas y desafíos de programación que te ayudarán a mejorar tus habilidades de resolución de problemas.
 
-## Estructura del repositorio
-
-- El directorio `Ejercicios` contiene los archivos de código fuente y las soluciones de los ejercicios individuales.
-- El directorio `Proyectos` contiene proyectos más extensos que puedes desarrollar y ampliar.
-- El directorio `Desafíos` presenta problemas y desafíos adicionales para poner a prueba tus habilidades.
-
-## Contribuciones
-
-¡Se alientan las contribuciones a este repositorio! Si deseas agregar tus propios ejercicios, proyectos o mejoras al código existente, siéntete libre de hacer un fork del repositorio y enviar tus pull requests.
 
 ## Recursos adicionales
 
@@ -25,4 +16,3 @@ Si eres nuevo en Python o necesitas repasar algunos conceptos, aquí hay algunos
 - [Documentación oficial de Python](https://docs.python.org/es/3/)
 - [Python para principiantes](https://python.org.ar/aprendiendo-python/)
 
-¡Diviértete explorando los ejercicios y proyectos de este repositorio! Si tienes alguna pregunta o sugerencia, no dudes en crear un issue.

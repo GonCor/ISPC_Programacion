@@ -20,4 +20,69 @@ for i in numeros:
         suma+=i
 print(f'Los pares son {pares} y la suma de ellos fue: {suma}')
 
+"Leer 10 números y obtener la cantidad de mayores y la cantidad de menores a 100, cuál es el número máximo y cuál es el número mínimo"
         
+diezNumeros=[555,86,133,22,254,-87,753,22,51,91]
+menorNumero=diezNumeros[0]
+mayorNumero=diezNumeros[0]
+qMayoresDeCien=0
+
+
+for i in diezNumeros:
+    if i >100:
+        qMayoresDeCien+=1
+    if i < menorNumero:
+        menorNumero=i
+    if i > mayorNumero:
+        mayorNumero=i
+qMenoresDeCien=10-qMayoresDeCien        
+print(f"El menor numero de estos 10 analizados es el {menorNumero}, el mayor es el {mayorNumero} , los numeros superiores a cien son {qMayoresDeCien} y los menores a cien {qMenoresDeCien}")
+
+""" 
+3. Ingresar las edades y el sexo de 15 personas y determinar cuántas son
+mujeres, cuántos varones, cuántos mayores de edad y cuántos
+menores de edad. """
+
+edades=[]
+sexo=[]
+
+for i in range(15):
+    bandera=False
+    
+    #Aca validamos que la edad se encuentre en un rago entre 0 y 150
+    while bandera is False:
+        edad=int(input("Ingrese su edad: "))
+        if edad >=0 and edad <=150 :
+            edades.append(edad)
+            bandera is True
+            break
+
+        else:
+            print("Edad incorrecta - Debe ingresar una edad válida entre 0 y 150.")
+    while bandera is False:
+        sex=input("Ingrese su Sexo M o F: ")
+        sex=sex.upper()
+        if sex== "M" or sex == "F":
+            sexo.append(sex)
+            bandera is True
+            break
+
+        else:
+            print("Ingrese para Masculino la letra M o para Femenino la letra F")        
+
+print( f'las edades de las {len(edades)} personas analizadas son:{edades}')
+print( f'el sexo de las {len(sexo)} personas analizadas son:{sexo}')
+
+#Reciclo codigo utilizado arriba
+
+
+menorNumero=edades[0]
+mayorNumero=edades[0]
+
+
+for i in edades:
+    if i < menorNumero:
+        menorNumero=i
+    if i > mayorNumero:
+        mayorNumero=i       
+print(f"El menor numero de estos {len(edades)} analizados es el {menorNumero}menor numero y mayor numero es {mayor mayorNumero} ")

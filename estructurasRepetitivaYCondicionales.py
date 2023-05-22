@@ -1,15 +1,7 @@
 """ Ejercicios estructuras repetitivas y estructuras condicionales.
 1. Realice un programa que lea 4 números y diga cuántos son pares y
 cuantos impares y devuelva la sumatoria de los pares.
-2. Leer 10 números y obtener la cantidad de mayores y la cantidad de
-menores a 100, cuál es el número máximo y cuál es el número mínimo.
-3. Ingresar las edades y el sexo de 15 personas y determinar cuántas son
-mujeres, cuántos varones, cuántos mayores de edad y cuántos
-menores de edad.
-4. Leer 10 números y mostrar solamente los números positivos, y su
-sumatoria.
-5. Leer 15 números negativos y convertirlos a positivos e imprimir dichos
-números. """
+"""
 
 numeros=[1,2,3,4]
 pares=[]
@@ -20,7 +12,7 @@ for i in numeros:
         suma+=i
 print(f'Los pares son {pares} y la suma de ellos fue: {suma}')
 
-"Leer 10 números y obtener la cantidad de mayores y la cantidad de menores a 100, cuál es el número máximo y cuál es el número mínimo"
+"2. Leer 10 números y obtener la cantidad de mayores y la cantidad de menores a 100, cuál es el número máximo y cuál es el número mínimo"
         
 diezNumeros=[555,86,133,22,254,-87,753,22,51,91]
 menorNumero=diezNumeros[0]
@@ -86,3 +78,27 @@ for i in edades:
     if i > mayorNumero:
         mayorNumero=i       
 print(f"El menor numero de estos {len(edades)} analizados es el {menorNumero}menor numero y mayor numero es {mayor mayorNumero} ")
+
+
+"""4. Leer 10 números y mostrar solamente los números positivos, y su
+sumatoria."""
+
+number=[-8,7,65,-78,74,1,-3,45,63,78]
+numberPositive=[]
+addNumberPositive=0
+for i in number:
+    if i>0:
+        numberPositive.append(i)
+        addNumberPositive+=i
+print(f'Los numeros positivos son los siguientes. {numberPositive} y su sumatoria da: {addNumberPositive}')
+
+
+""""5. Leer 15 números negativos y convertirlos a positivos e imprimir dichos
+números. """
+
+number=[-8,-7,-65,-78,-74,-1,-3,-45,-63,-78,-65,-22,-1,-44,-89]
+numberPositive=[]
+for i in number:
+   i=i*-1
+   numberPositive.append(i)
+print(f'Los numeros positivos son los siguientes. {numberPositive}')
